@@ -63,7 +63,7 @@ rcs:
     request:
       jwt:
         must-be-validated: false # used in (ConsentDetailsApiController: default true)
-  rs_fqdn: ${RS_FQDN:rs.idhub.cc} # RS Full Qualified Domain Name
+  rs_fqdn: ${RS_FQDN:rs} # RS Full Qualified Domain Name
   schema: https # part of URI to build
 
 # used by RCS to call backoffice RS endpoints
@@ -75,3 +75,15 @@ rs:
         findUserById: /backoffice/accounts/search/findByUserId # Context endpoint to find accounts user by userId
       domestic-payments:
         findUserById: /backoffice/domestic-payments/search/findByUserId # Context endpoint to find payment user by userId
+
+# Swagger Documentation Specification properties
+swagger:
+  title: Secure Banking Access Toolkit
+  description: Swagger for Read/Write Open Banking API Specification (UK) (https://openbankinguk.github.io/read-write-api-site3)
+  license: open-licence
+  license-url: https://www.openbanking.org.uk/open-licence
+  terms-of-service-url: https://backstage.forgerock.com/knowledge/openbanking/article/a45894685
+  contact-name: ForgeRock RS Simulator
+  contact-url: https://www.forgerock.com/
+  docket-apis-basePackage: com.forgerock.securebanking.openbanking.uk.rs.api.obie
+  docket-paths-selector-regex: /open-banking/v(\d+.)?(\d+.)?(\*|\d+)
