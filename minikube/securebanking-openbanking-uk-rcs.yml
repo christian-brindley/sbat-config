@@ -34,7 +34,7 @@ logging:
 # identity platform properties
 identity-platform:
   client:
-    ig_fqdn: ${IG_FQDN:https://obdemo.idhub.cc} # IG Full Qualified Domain Name
+    ig_fqdn: ${IG_FQDN:https://tpp.sbat.demo} # IG Full Qualified Domain Name
     identity_platform_fqdn: ${IDENTITY_PLATFORM_FQDN:openam-forgerock-securebankingaccelerato.forgeblocks.com} # identity platform Full Qualified Domain NAme
     jwk_uri: ${identity-platform.client.identity_platform_fqdn}/am/oauth2/connect/jwk_uri # JWK keys endpoint
     contexts_api_client: # Context to build the URI to make a request against the repository endpoint to obtain the client object by clientId
