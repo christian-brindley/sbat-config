@@ -57,6 +57,9 @@ identity-platform:
     jwkms_request_method: POST # http verb to signing reponses
     jwkms_consent_signing_endpoint: /jwkms/rcs/signresponse # Consent signing context endpoint
 
+# TODO: fix this
+scheme: http
+
 # Rcs properties
 rcs:
   # conditional for requests
@@ -66,7 +69,6 @@ rcs:
         must-be-validated: false # used in (ConsentDetailsApiController: default true)
   rs_fqdn: ${RS_FQDN:rs} # RS Full Qualified Domain Name
   schema: http # part of URI to build
-  scheme: http # part of URI to build
 
 # used by RCS to call backoffice RS endpoints
 # @ See: https://github.com/SecureBankingAccessToolkit/securebanking-openbanking-uk-rcs, Class: RsBackofficeConfiguration
