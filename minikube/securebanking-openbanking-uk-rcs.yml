@@ -65,7 +65,7 @@ rcs:
       jwt:
         must-be-validated: false # used in (ConsentDetailsApiController: default true)
   rs_fqdn: ${RS_FQDN:rs} # RS Full Qualified Domain Name
-  schema: https # part of URI to build
+  schema: http # part of URI to build
 
 # used by RCS to call backoffice RS endpoints
 # @ See: https://github.com/SecureBankingAccessToolkit/securebanking-openbanking-uk-rcs, Class: RsBackofficeConfiguration
